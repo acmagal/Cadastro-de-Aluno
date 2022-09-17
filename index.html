@@ -22,6 +22,45 @@
         <textarea id="numPal">Numero de Palavras</textarea>
     </div>
 
+<div>
+<label> Escolha uma vogal:</label>
+<select id="vogais">
+    <option value="escolha"> Escolha </option>
+    <option value="Letra A">Letra A </option>
+    <option value="Letra E">Letra E </option>
+    <option value="Letra I">Letra I </option>
+    <option value="Letra O">Letra O </option>
+    <option value="Letra U">Letra U </option>
+    
+</select>
+</div>
+
+<div>
+<label> Escolha um local:</label>
+<select id="locais" multiple>
+    <option value="escolha"> Escolha </option>
+    <option value="Ceara">Ceara </option>
+    <option value="Bahia">Bahia </option>
+    <option value="Sergipe">Sergipe </option>
+    <option value="Pernambuco">Pernambuco </option>
+    <option value="Mato Grosso">Mato Grosso</option>
+    
+</select>
+</div>
+
+<form action="form-action.php" method="post">
+    <p>
+        <input type="radio" name="comida" value="cuzcuz"/>Cuzcuz
+        <input type="radio" name="comida" value="bolo"/> Bolo
+        <input type="radio" name="comida" value="milho"/>Milho
+    </p>
+    <p>
+        <input type="button" id="btnSubmit" value="Mostrar Escolhas!" onclick=informaEscolha() />
+    </p>
+</form>
+
+
+
           
 
     

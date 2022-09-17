@@ -1,3 +1,5 @@
+
+
 function contChar() {
 	var nome = document.getElementById('nome').value;
     var numero = document.getElementById('numChar').value;
@@ -18,6 +20,37 @@ function contChar() {
     
     
 
+    
+
+
+}
+
+
+var comida;
+
+
+function informaEscolha() {
+    
+    
+    document.getElementById("btnSubmit").onclick = function() {
+        var vogais = document.getElementById('vogais').value;
+        var locais = document.getElementById('locais').value;
+        var radios = document.getElementsByName("comida");
+        for (var i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                
+                
+
+                alert("Vogal escolhida é: " + vogais + "\nLugar escolhido é: " + locais + "\nComida escolhida é: " + radios[i].value );
+                
+            }
+        }
+    }
+
+
+
+    
+    
     
 
 
